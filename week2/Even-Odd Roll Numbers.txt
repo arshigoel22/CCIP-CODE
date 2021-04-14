@@ -1,0 +1,70 @@
+                            Even-Odd Roll Numbers 
+
+In a class there can be ’n’ students, whose roll numbers starts
+ from zero ’0’. Two practicals assigned to all the students such 
+that all the students with even roll number will do practical 1 
+and with odd roll numbers do practical 2.
+
+Marks alloted to each student and store in the form of 
+We need to find the absolute difference between the average marks
+ of students with even roll number & odd roll numbers.
+
+Input Format
+
+Accept marks of ‘n’ students.
+
+Constraints
+
+1 <= n <= 50 1 <= marks <= 100
+
+Output Format
+
+Print the absolute value of difference of averages
+
+Sample Input 0
+
+5
+25 36 48 29 95
+Sample Output 0
+
+23.5
+
+output-
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+
+    public static void main(String[] args) 
+    {
+     int a1,a2,i,n,count=0,count1=0,diff;
+     Scanner sc = new Scanner(System.in);
+     n=sc.nextInt();
+     int a[] = new int[n];
+     
+          for(i=1;i<=100;i++)
+          {
+            a[i]=sc.nextInt();
+           }
+         int s1=0,s2=0; 
+      for(i=1;i<=100;i++)
+        {
+          if(i%2==0)
+          {
+            s1 = s1+a[i];
+            count++;
+          }
+          else
+           {
+             s2 = s2+a[i];
+             count1++;
+           }
+        }
+        a1=s1/count;
+        a2=s2/count1;
+        System.out.print(a2-a1);
+        
+    }
+}
+}

@@ -1,0 +1,63 @@
+                                Swapping Errors 
+
+
+Ritu got marks M1 & M2 in Chemistery & Physics respectively. But the marks M1 & M2 gets 
+interchanged during the process of uploading marks. To avoid this we create a progrmam 
+that swaps the two numbers to compensate the error without using third varible. But, the 
+program has an error that the (-) sign & (+) sign get interchanged in swapping program.
+
+Assume that the original sum of M1 & M2 is S1 and the sum after applying modified swap 
+procedure is S2, then find the the number maximum among S1 & S2.
+
+Input Format
+
+Accept to numbers M1 & M2.
+
+Constraints
+
+0 <= M1 <= 100 0 <= M2 <= 100
+
+Output Format
+
+Print the sum of modified number M1 & M2 and also find maximum among S1 & S2, Sum = M1 + M2 Max = max(M1, M2)
+
+Sample Input 0
+
+5  15
+Sample Output 0
+
+Sum = 0
+Max = 20
+
+
+output-
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       int m1,m2,max,s1,s2,t=0;
+        Scanner ss = new Scanner(System.in);
+        m1=ss.nextInt();
+        m2=ss.nextInt();
+        
+        s1=m1+m2; System.out.print("Sum = "+s1);
+       
+        m1=t;
+        m2=m1;
+        t=m2;
+        s2=m1+m2;
+        if(s1>s2) System.out.print("Max = "+s1);
+        else
+        System.out.print("Max = "+s2);
+
+        
+    
+    
+    }
+    
+}
