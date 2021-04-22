@@ -1,0 +1,49 @@
+                   First n’ last Problem
+
+
+Sneha got a task to play with words. He decided to merge the first and last letter of the
+ word together and add a new word with just letters in her dictionary.You have task to
+ print those farthest letters after concatenation.
+
+Ex: Input – Condition Output – Cn
+
+Input Format
+
+Enter a word of length ‘n’.
+
+Constraints
+
+2<= n <= 20
+
+Output Format
+
+Print the output after performing necessary operations.
+
+Sample Input 0
+
+Condition
+Sample Output 0
+
+Cn
+
+
+Output-
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    char s[100];
+    int i,c,n;
+    scanf("%s",s);
+    n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+        c=i;
+    }
+    printf("%c %c",s[0],s[c]);
+    return 0;
+}

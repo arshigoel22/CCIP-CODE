@@ -1,0 +1,53 @@
+                         Division in Friendship 
+
+
+Ramesh got marks M1 & M2 in Hindi & Sanskrit respectively. His 
+friend Suresh got marks M3 in subject Urdu. Find the maximum marks that Suresh can get
+ in Urdu such that, the marks of Suresh completely divides the marks M1 & M2 both with 
+ramainder 0.
+
+Input Format
+
+Enter M1 & M2 in first line and marks can be integer only.
+
+Constraints
+
+0<= M1,M2,M3 <=100
+
+Output Format
+
+Print the value of M3 as output
+
+Sample Input 0
+
+12 36
+Sample Output 0
+
+12
+
+
+Output-
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int M1,M2,M3,num,i;
+    scanf("%d %d",&M1,&M2);
+    if(M1>M2)
+    {
+        num=M1;
+    }
+    else{num=M2;}
+        for(i=1;i<num;i++){
+            if(i%M1==0 && i%M2)
+            {
+                M3=i;
+            }
+        }
+    printf("%d",M3);
+    return 0;
+}

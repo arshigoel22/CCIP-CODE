@@ -1,0 +1,55 @@
+                           Bit Verification Problem
+
+Sucheta got a number ‘n’ as input. She got an another number ‘p’ as input. Now she got 
+the task to identify that the pth from left is 1 or 0.
+
+Input Format
+
+Enter the value of n & p separated by space.
+
+Constraints
+
+1< = n <= 255 1<= p <=8
+
+Output Format
+
+Print “Yes’ for 1 & “No” for 0.
+
+Sample Input 0
+
+32 3
+Sample Output 0
+
+No
+
+Output-
+
+#inclde<stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int factorial(int);
+int main() {
+    int n,p,i,a[100],rem;
+    scanf("%d %d",&n,&p);
+    while(n>0){
+        rem=n%10;
+        for(i=1;i<=1;i++){
+            a[i]=rem;
+        }
+        n=n/10;
+    }
+    for(i=1;i<=p;i++)
+    {
+        if(i==p){
+            if(a[1]==1)
+            {
+                printf("Yes");
+            }
+            else{
+                printf("No");
+            }
+        }
+    }
+    return 0;
+}
