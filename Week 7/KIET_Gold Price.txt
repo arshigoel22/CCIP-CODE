@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+ Scanner sc =new Scanner(System.in);
+      int n=sc.nextInt();
+      int per=sc.nextInt();
+      int fper=4*per;
+      int num=n;
+      System.out.print(num+((n)/100*fper));
+    }
+}
